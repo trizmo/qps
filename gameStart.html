@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="./assets/style/style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+  <script src="./assets/script/script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="playerInfo">
+    <div>
+      Current Round: <span id="roundDisp">0</span>
+    </div>
+  </div>
+
+
+  <div class="container">
+
+    <div class="gameDisp">
+      <div class="otherPlayerScreen">
+        <span id="otherPlayerName">Other Player</span> Screen
+
+      </div>
+      <div class="thisPlayerScreen">
+        <span id="thisPlayerName">This Player</span> Screen
+
+      </div>
+      <div class="HUDWeapons">
+
+        <div class="quartz">
+          <button type="button" id="Q">Q</button>
+        </div>
+
+        <div class="parchment">
+          <button type="button" id="P">P</button>
+        </div>
+
+        <div class="shears">
+          <button type="button" id="S">S</button>
+        </div>
+
+
+
+      </div>
+    </div>
+
+
+    <div class="chatDisp">
+
+      <div class="chatDialogBox">
+      </div>
+
+      <input type="text" id="chatInput">
+      <button>Send</button>
+
+    </div>
+  </div>
+
+
+
+
+
+
+</body>
+
+</html>

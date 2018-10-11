@@ -3,23 +3,107 @@
 
 <head>
   <link href="./assets/style/style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
   <script src="./assets/script/script.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>QPS - Game Menu</title>
 </head>
 
 <body>
 
-  
+
   <header>
     <div>
       <div class="logo"><span>Quartz, Parchment, Shears</span></div>
+      <div class="sub-title"><span></span></div>
     </div>
 
   </header>
-  
+
+
+  <div id="gameMenuDisp">
+    <div class="playerOneBox">
+      <span id="playerOneSelector">Player 1</span>
+      <div id="playerOneNameDisp">
+        <input type="text" placeholder="Enter Name..." id="playerOneName">
+        <button id="playerOneNameSubmit" type="button"> submit </button>
+      </div>
+
+    </div>
+
+    <div class="playerTwoBox">
+      <span id="playerTwoSelector">Player 2</span>
+
+      <div id="playerTwoNameDisp">
+        <input type="text" placeholder="Enter Name..." id="playerTwoName">
+        <button id="playerTwoNameSubmit" type="button"> submit </button>
+      </div>
+
+
+    </div>
+
+    <button type="button" id="next"> submit </button>
+
+  </div>
+
+
+  <div id="QPSgameDisp">
+    <div class="playerInfo">
+      <div>
+        Current Round: <span id="roundDisp">0</span>
+      </div>
+    </div>
+
+
+    <div class="container">
+
+      <div class="gameDisp">
+        <div class="otherPlayerScreen">
+          <span id="otherPlayerName">Other Player</span> Screen
+
+        </div>
+        <div class="thisPlayerScreen">
+          <span id="thisPlayerName">This Player</span> Screen
+
+        </div>
+        <div class="HUDWeapons">
+
+          <div class="quartz">
+            <button type="button" id="Q">Q</button>
+          </div>
+
+          <div class="parchment">
+            <button type="button" id="P">P</button>
+          </div>
+
+          <div class="shears">
+            <button type="button" id="S">S</button>
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+      <div class="chatDisp">
+
+        <div class="chatDialogBox">
+        </div>
+
+        <input type="text" id="chatInput">
+        <button>Send</button>
+
+      </div>
+    </div>
+
+
+  </div>
+
 
 </body>
 
