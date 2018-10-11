@@ -66,7 +66,7 @@ $(document).ready(function () {
   })
 
   $("#playerOneSelector").click(function () {
-    if (localStorage.getItem("player") === "playerTwoX") {
+    if (localStorage.getItem("player") === "playerTwo") {
       console.log("TESTINGyou can't be two players!")
     } else {
       localStorage.setItem("player", "playerOne");
@@ -80,7 +80,7 @@ $(document).ready(function () {
   })
 
   $("#playerTwoSelector").click(function () {
-    if (localStorage.getItem("player") === "playerOneX") {
+    if (localStorage.getItem("player") === "playerOne") {
       console.log("TESTINGyou can't be two players!")
     } else {
       localStorage.setItem("player", "playerTwo");
